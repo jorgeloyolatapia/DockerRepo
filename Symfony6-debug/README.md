@@ -15,3 +15,7 @@ This environment use:
   ```
     $ docker-compose up -d
   ```
+1. Install the dependencies:
+  ```
+    $ docker-compose exec php composer install
+  ```
