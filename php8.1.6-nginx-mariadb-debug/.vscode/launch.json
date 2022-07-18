@@ -6,7 +6,7 @@
             "request": "launch",
             "port": 9000,
             "pathMappings": {
-                "/var/www/app": "${workspaceFolder}\\php8-nginx\\src"
+                "/var/www/app": "${workspaceFolder}\\php8.1.6-nginx-mariadb-debug\\src"
             }
         }
        ]
