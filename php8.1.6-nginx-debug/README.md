@@ -1,4 +1,4 @@
-# PHP - NGINX - DEBUG ENVIROMENT
+# PHP - NGINX - DEBUG ENVIRONMENT
 
 This environment was made only used for developing solutions.
 ## Description: 

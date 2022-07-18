@@ -1,4 +1,4 @@
-# PHP - NGINX - MARIADB DEBUG ENVIROMENT
+# PHP - NGINX - MARIADB DEBUG ENVIRONMENT
 
 This environment was made only used for developing solutions.
 ## Description: 
