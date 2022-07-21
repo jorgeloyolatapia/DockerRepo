@@ -5,6 +5,7 @@ This environment was made only used for developing solutions.
 This environment use:
 - php:8.1.6RC1-fpm-alpine3.15
 - nginx:1.21.6
+- mariadb:10.8
 - Symfony 6.0.10
 - xdebug 3 (important, with xdebug 2 dont work)
 

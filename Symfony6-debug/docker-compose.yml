@@ -32,7 +32,7 @@ services:
       - "mariadb"
 
   mariadb:
-    image: mariadb
+    image: mariadb:10.8
     container_name: symfony6-mariadbServer
     environment:
       MARIADB_DATABASE: dbtest
