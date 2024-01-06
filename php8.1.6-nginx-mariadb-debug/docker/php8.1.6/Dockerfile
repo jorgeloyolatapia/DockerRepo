@@ -9,6 +9,7 @@ RUN apk --update add \
     bzip2-dev \
     autoconf \
     php-bcmath \
+    linux-headers \
     build-base \
     curl \
     git \

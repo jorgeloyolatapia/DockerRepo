@@ -1,14 +1,10 @@
-FROM php:8.1.6RC1-fpm-alpine3.15
+FROM php:8.3.2RC1-fpm-alpine3.18
 
-COPY ./docker/php8.1.6/php.ini $PHP_INI_DIR/php.ini
-COPY ./docker/php8.1.6/xdebug.ini $PHP_INI_DIR/conf.d/50_xdebug.ini
+COPY ./docker/php8.3.2/xdebug.ini $PHP_INI_DIR/conf.d/50_xdebug.ini
 
-
-# Composer Dependencies
 RUN apk --update add \
     bzip2-dev \
     autoconf \
-    php-bcmath \
     linux-headers \
     build-base \
     curl \
@@ -28,12 +24,13 @@ RUN apk --update add \
     docker-php-ext-configure ldap --with-libdir=lib/ && \
     docker-php-ext-install bcmath && \
     docker-php-ext-install ldap && \
-    docker-php-ext-install pdo_mysql && \
     pecl install xdebug && \
     docker-php-ext-enable xdebug && \
+    pecl install mongodb && \
     apk del build-base && \
     rm -rf /var/cache/apk/*
 
+RUN docker-php-ext-enable mongodb
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
