@@ -1,11 +1,11 @@
-# PHP - NGINX - MARIADB DEBUG ENVIRONMENT
+# PHP - NGINX - MONGO DEBUG ENVIRONMENT
 
 This environment was made only used for developing solutions.
 ## Description: 
 This environment use:
-- php:8.1.6RC1-fpm-alpine3.15
+- php:8.3.2RC1-fpm-alpine3.18
 - nginx:1.21.6
-- mariadb:10.7.4
+- mongo
 - xdebug 3 (important, with xdebug 2 dont work)
 
 ## Instructions: 
